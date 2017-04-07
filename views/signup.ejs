@@ -5,10 +5,11 @@
     </title>
   </head>
   <body>
-    <form method="post" action="/signup">
+    <form method="post" enctype="multipart/form-data" action="/signup">
       <input type="text" name="name" placeholder="Full Name">
       <input type="text" name="uname" placeholder="Username">
       <input type="password" name="pwd" placeholder="*******">
+      <input type="file" name="img">
       <button type="submit" name="submit">Register</button>
     </form>
   </body>

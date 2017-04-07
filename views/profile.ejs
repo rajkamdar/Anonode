@@ -3,9 +3,14 @@
     <title>
     Anonode
   </title>
+  <link rel="stylesheet" type="text/css" href="../assets/style.css"/>
   </head>
 
   <body>
+    <%if(img!=undefined){%>
+    <img src="/<%=img%>" id="dp"/>
+    <%}%>
+    <h3><%=name%></h3>
     <div class="form">
       <form action="/confess" method="post">
         <input type="text" name="msg" placeholder="Enter your message here">
